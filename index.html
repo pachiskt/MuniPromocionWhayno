@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Muninteligente | Tablero de Control de Inversiones y Destrabe de Obras para Alcaldes</title>
+  <meta name="description" content="Semáforo de obras públicas, alertas tempranas y órdenes de destrabe automáticas con funcionario responsable y plazo perentorio. El alcalde y la gerencia deciden con datos en tiempo real.">
+  <meta name="keywords" content="Muninteligente, destrabe de obras, gestión municipal, Invierte.pe, SIAF, alcaldes perú, ejecución presupuestal">
+  <meta name="author" content="Whayno Consultores">
+
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muninteligente | Tablero de Control de Inversiones para Alcaldes">
+  <meta property="og:description" content="Sepa qué obra está trabada, quién la traba y qué orden firmar. Datos en tiempo real para alcaldes y gerentes municipales.">
+  <meta property="og:image" content="https://muninteligente.lovable.app/og-image.png">
+
+  <!-- Google Fonts: Outfit (Titulares) y Plus Jakarta Sans (Lectura) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVEGACIÓN PRINCIPAL
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="wrap header-nav">
+      <a href="#top" class="logo-brand" aria-label="Muninteligente Inicio">
+        <div class="logo-icon">M</div>
+        <span>Muni<span class="highlight">inteligente</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinksMenu">
+        <li><a href="#problema">El problema</a></li>
+        <li><a href="#solucion">Solución</a></li>
+        <li><a href="#simulador">Simulador de Impacto</a></li>
+        <li><a href="#como">Cómo funciona</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Alternador de Tema Oscuro / Claro -->
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="https://muninteligente.lovable.app/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" id="headerVerDemoBtn">
+          Ver demo
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+
+        <a href="#registro" class="btn btn-primary btn-sm">
+          Solicitar Demo
+        </a>
+
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ==========================================================================
+         HERO SECTION: PROPUESTA DE VALOR + TABLERO INTERACTIVO
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="hero-glow-bg"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            Semáforo de Inversiones Municipales en Tiempo Real
+          </div>
+          <h1>Sepa qué obra está trabada, <span class="text-gradient">quién la traba</span> y qué orden firmar.</h1>
+          <p class="lead">
+            Muninteligente reúne en un solo tablero la ejecución presupuestal, el semáforo crítico de cada inversión pública y las órdenes de destrabe listas con funcionario responsable y plazo. El alcalde decide con datos, no con informes tardíos.
+          </p>
+
+          <div class="cta-group">
+            <a href="#registro" class="btn btn-primary btn-lg">
+              Agendar Demo y Diagnóstico
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </a>
+            <a href="https://muninteligente.lovable.app/" target="_blank" rel="noopener" class="btn btn-ghost">
+              Explorar Demo en Vivo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+          <div class="hero-trust-row">
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Alineado a directivas Invierte.pe y OSCE</span>
+            </div>
+            <div class="hero-trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Impulsado por Whayno Consultores</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MOCKUP INTERACTIVO DEL TABLERO DE CONTROL -->
+        <div class="board-container" aria-label="Simulador interactivo del tablero de inversiones de Muninteligente">
+          <div class="board-header-bar">
+            <div class="board-title-group">
+              <strong style="font-size: 1.05rem;">Tablero de Cartera Municipal</strong>
+              <span class="live-indicator"><span class="live-dot"></span> EN VIVO</span>
+            </div>
+            <small style="color: var(--ink-muted); font-size: 0.78rem;">Gestión Fiscal 2026</small>
+          </div>
+
+          <!-- Tarjetas KPI -->
+          <div class="kpi-row">
+            <div class="kpi-card">
+              <span class="kpi-value">32.7%</span>
+              <span class="kpi-label">Ejecución Presupuestal</span>
+              <span class="kpi-badge warning">Meta 45% al I Sem.</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-value" style="color: var(--status-red);">3 Obras</span>
+              <span class="kpi-label">Semáforo Rojo (Críticas)</span>
+              <span class="kpi-badge danger">Requieren firma hoy</span>
+            </div>
+            <div class="kpi-card">
+              <span class="kpi-value">S/ 7.9 M</span>
+              <span class="kpi-label">Monto en Riesgo</span>
+              <span class="kpi-badge danger">Expuesto a parálisis</span>
+            </div>
+          </div>
+
+          <!-- Filtros de Obras -->
+          <div class="board-filter-tabs">
+            <button type="button" class="filter-tab active" data-filter="all">Todas las Obras (5)</button>
+            <button type="button" class="filter-tab" data-filter="red">En Rojo (2)</button>
+            <button type="button" class="filter-tab" data-filter="amber">En Ámbar (2)</button>
+            <button type="button" class="filter-tab" data-filter="green">En Verde (1)</button>
+          </div>
+
+          <!-- Lista Interactiva de Inversiones -->
+          <div class="board-project-list" id="projectListContainer">
+            <!-- Cargado dinámicamente por app.js -->
+          </div>
+
+          <div style="margin-top: 14px; text-align: center;">
+            <small style="color: var(--ink-muted); font-size: 0.8rem;">
+              💡 Haga clic en <strong>"Ver Orden"</strong> para simular el decreto administrativo generado por la IA.
+            </small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN: EL PROBLEMA
+         ========================================================================== -->
+    <section id="problema" class="section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="badge-pill">Cuello de Botella Municipal</div>
+          <h2>Las obras no se paran por falta de plata.<br><span class="text-gradient">Se paran por falta de seguimiento.</span></h2>
+          <p class="lead">
+            Una valorización sin registrar, una adenda de supervisión que vence en silencio o una interferencia no resuelta pueden congelar millones de soles y desatar arbitrajes. El verdadero peligro es enterarse cuando ya no hay tiempo legal de respuesta.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3>Información dispersa en islas</h3>
+            <p>
+              El avance físico vive en los cuadernos de obra, el avance financiero en el SIAF y los trámites en mesa de partes. Nadie en el concejo tiene la fotografía integral en tiempo real.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <h3>Alertas que llegan con retraso</h3>
+            <p>
+              El alcalde y el gerente municipal se enteran de que la obra está paralizada cuando los vecinos reclaman en las calles o cuando el contratista ya ingresó solicitud de ampliación de plazo con penalidades.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
+            </div>
+            <h3>Sin responsable ni plazo claro</h3>
+            <p>
+              En las reuniones de gerencia todos admiten que existe un problema técnico, pero no se precisa quién debe emitir el informe, qué requisitos faltan ni el plazo perentorio para resolverlo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN: LA SOLUCIÓN
+         ========================================================================== -->
+    <section id="solucion">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="badge-pill">Arquitectura Muninteligente</div>
+          <h2>Un sistema integral, <span class="text-gradient">tres miradas para actuar</span></h2>
+          <p class="lead">
+            Muninteligente no es un software administrativo más. Es un motor de seguimiento que entrega a cada estamento de la comuna los datos exactos que necesita para decidir sin dilaciones.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+            </div>
+            <h3>1. Alcalde y Gerencia Municipal</h3>
+            <p>
+              Tablero de mando con semáforo ejecutivo, montos totales en riesgo, causas de trabas y órdenes de destrabe automatizadas con unidad responsable y plazo legal. Reporte ejecutivo semanal listo para firmar e imprimir.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3>2. Funcionarios y Unidades Técnicas</h3>
+            <p>
+              Copiloto inteligente que estructura resoluciones, verifica listas de chequeo normativo de OSCE e Invierte.pe, y detalla exactamente qué sustento técnico falta para liberar la valorización o adenda.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>3. Ciudadanía y Transparencia</h3>
+            <p>
+              Portal transparente donde la población consulta el estado real de los proyectos de su distrito, reduciendo la crispación social e integrando canal de atención vecinal (311) para reportes de interferencias.
+            </p>
+          </div>
+        </div>
+
+        <div class="principle-banner">
+          <div class="principle-icon">⚖️</div>
+          <div class="principle-text">
+            "La inteligencia de datos prepara, verifica, alerta y explica. El alcalde y sus funcionarios deciden, firman y responden ante la ley."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SIMULADOR DE IMPACTO DESTRABE (CALCULADORA INTERACTIVA)
+         ========================================================================== -->
+    <section id="simulador" class="section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="badge-pill">Simulador de Impacto Económico</div>
+          <h2>¿Cuánto presupuesto puede salvar en su gestión?</h2>
+          <p class="lead">
+            Seleccione el presupuesto aproximado de inversión pública (PIM) de su municipalidad para estimar el dinero en riesgo y los días de paralización evitables con alertas preventivas.
+          </p>
+        </div>
+
+        <div class="simulator-box">
+          <div class="simulator-controls">
+            <h3>Configure la cartera de su comuna</h3>
+            <p style="font-size: 0.95rem; color: var(--ink-muted); margin-bottom: 20px;">
+              Mueva el control deslizante según el presupuesto total de inversiones (en Millones de Soles):
+            </p>
+
+            <div class="simulator-slider-group">
+              <div class="slider-label">
+                <span>Presupuesto Anual de Obras (PIM):</span>
+                <span class="slider-value-display" id="displayBudgetValue">S/ 25 Millones</span>
+              </div>
+              <input type="range" class="range-input" id="budgetSlider" min="5" max="150" step="5" value="25" aria-label="Presupuesto de obras">
+              <div style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--ink-muted); margin-top: 6px;">
+                <span>S/ 5 M (Distrital Pequeña)</span>
+                <span>S/ 75 M (Provincial Media)</span>
+                <span>S/ 150 M (Provincial / GORE)</span>
+              </div>
+            </div>
+
+            <div style="font-size: 0.88rem; color: var(--ink-secondary); background: var(--bg-subtle); padding: 14px; border-radius: var(--radius-sm);">
+              📌 <strong>Dato clave:</strong> El 34% de los proyectos municipales sufren retrasos administrativos de más de 30 días por falta de articulación entre logística, planeamiento y obras.
+            </div>
+          </div>
+
+          <div class="simulator-results">
+            <h4 style="font-size: 1.15rem; margin-bottom: 6px;">Estimación de Impacto Muninteligente</h4>
+
+            <div class="result-item">
+              <div class="result-label">Monto promedio expuesto a trabas:</div>
+              <div class="result-stat highlight" id="displayRiesgoValue">S/ 8.5 M</div>
+            </div>
+
+            <div class="result-item">
+              <div class="result-label">Días calendario ahorrados con alerta temprana:</div>
+              <div class="result-stat" id="displayDiasValue">42 días</div>
+            </div>
+
+            <div class="result-item">
+              <div class="result-label">Inversiones protegidas de arbitrajes / parálisis:</div>
+              <div class="result-stat" id="displayObrasValue">9 inversiones</div>
+            </div>
+
+            <div style="margin-top: 14px;">
+              <a href="#registro" class="btn btn-primary btn-sm btn-full">
+                Solicitar Diagnóstico para mi Cartera Real
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN: CÓMO FUNCIONA (PASOS)
+         ========================================================================== -->
+    <section id="como">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="badge-pill">Flujo de Trabajo Operativo</div>
+          <h2>De la cartera de inversiones a la <span class="text-gradient">orden de destrabe firmada</span></h2>
+          <p class="lead">
+            Sin instalaciones complejas ni cambiar sus sistemas actuales. En 4 pasos su comuna opera con visión de control absoluto.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <h3>1. Carga de la Cartera</h3>
+            <p>
+              Consolidamos los CUI de sus proyectos, expedientes técnicos, contratos de obra y supervisión, unificando el seguimiento en una sola vista ejecutiva.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <h3>2. Semáforo y Alertas</h3>
+            <p>
+              El sistema clasifica cada obra en Rojo, Ámbar o Verde calculando retrasos, vencimientos de garantías, cartas fianza y trámites pendientes.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <h3>3. Orden de Destrabe</h3>
+            <p>
+              La plataforma redacta la propuesta de decreto administrativo con la causa de la traba, la directiva legal aplicable, el funcionario a cargo y el plazo perentorio.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <h3>4. Comité Semanal</h3>
+            <p>
+              Cada lunes el alcalde y los gerentes revisan el reporte ejecutivo impreso o digital: qué trabas se levantaron y quién incumplió plazos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN: RESPALDO DE WHAYNO CONSULTORES
+         ========================================================================== -->
+    <section class="section-alt">
+      <div class="wrap">
+        <div class="features-grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 40px;">
+          <div>
+            <div class="badge-pill">Experiencia en Gestión Pública</div>
+            <h2 style="font-size: 2.2rem; margin-bottom: 18px;">
+              Detrás del sistema, una consultora que conoce la realidad de las municipalidades
+            </h2>
+            <p style="font-size: 1.05rem; line-height: 1.65; margin-bottom: 20px;">
+              <strong>Muninteligente</strong> es una iniciativa tecnológica de <strong>Whayno Consultores</strong>, firma cusqueña especialista en planificación estratégica, gestión por procesos y modernización de gobiernos locales y regionales en el Perú.
+            </p>
+            <p style="font-size: 0.96rem; color: var(--ink-secondary); line-height: 1.65;">
+              No somos teóricos del software. Diseñamos este tablero porque hemos estado en las sesiones de concejo y en las obras paralizadas viendo cómo expedientes millonarios se congelan por un memo extraviado entre áreas.
+            </p>
+          </div>
+
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-md);">
+            <h3 style="margin-bottom: 18px; color: var(--brand-primary);">Principios de Garantía Institucional:</h3>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.95rem;">
+              <li style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="color: var(--status-green); font-weight: 800;">✓</span>
+                <span><strong>No sustituye al SIAF ni al Banco de Inversiones:</strong> Los complementa ordenando la gestión de alertas antes de los cierres mensuales.</span>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="color: var(--status-green); font-weight: 800;">✓</span>
+                <span><strong>Seguridad y Soberanía de Datos:</strong> Su información municipal no se comparte ni se utiliza para entrenar modelos públicos externos.</span>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="color: var(--status-green); font-weight: 800;">✓</span>
+                <span><strong>Acompañamiento en el Destrabe:</strong> Capacitamos a su equipo de gerentes y asesores legales para que adopten el tablero desde la primera semana.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN: FORMULARIO DE REGISTRO CON GUARDADO EN GOOGLE SHEETS
+         ========================================================================== -->
+    <section id="registro" class="form-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="badge-pill">Registro y Agendamiento</div>
+          <h2>Solicite una Demostración y Diagnóstico</h2>
+          <p class="lead">
+            Complete sus datos para coordinar una sesión personalizada de 30 minutos con el contexto de las obras de su municipalidad. Los datos se guardan de forma directa en nuestra base de datos institucional.
+          </p>
+        </div>
+
+        <div class="form-wrapper">
+          <!-- Formulario Principal -->
+          <div class="form-body">
+            <h3>Datos de Contacto Municipal</h3>
+            <p class="form-desc">Ingresa tus datos para registrar la solicitud en nuestra hoja de control:</p>
+
+            <form id="leadRegistrationForm" novalidate>
+              <div class="form-grid">
+                <!-- Nombre Completo -->
+                <div class="form-group">
+                  <label for="nombre" class="form-label">Nombre y Apellidos <span class="req">*</span></label>
+                  <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ej. Ing. Carlos Mendoza Ruiz" required>
+                </div>
+
+                <!-- Teléfono / WhatsApp -->
+                <div class="form-group">
+                  <label for="telefono" class="form-label">Teléfono / WhatsApp <span class="req">*</span></label>
+                  <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="Ej. 984 123 456" required>
+                </div>
+
+                <!-- Correo Electrónico -->
+                <div class="form-group col-span-2">
+                  <label for="email" class="form-label">Correo Electrónico (Institucional o Personal) <span class="req">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="ejemplo@muniejemplo.gob.pe" required>
+                </div>
+
+                <!-- Cargo / Rol -->
+                <div class="form-group">
+                  <label for="cargo" class="form-label">Cargo / Función <span class="req">*</span></label>
+                  <select id="cargo" name="cargo" class="form-select" required>
+                    <option value="" disabled selected>Seleccione su cargo...</option>
+                    <option value="Alcalde / Alcaldesa">Alcalde / Alcaldesa</option>
+                    <option value="Gerente Municipal">Gerente Municipal</option>
+                    <option value="Gerente de Obras / Infraestructura">Gerente de Obras / Infraestructura</option>
+                    <option value="Jefe de Planeamiento y Presupuesto">Jefe de Planeamiento y Presupuesto</option>
+                    <option value="Jefe de Logística / Abastecimiento">Jefe de Logística / Abastecimiento</option>
+                    <option value="Subgerente de Supervisión y Liquidaciones">Subgerente de Supervisión y Liquidaciones</option>
+                    <option value="Asesor Legal / Asesor de Alcaldía">Asesor Legal / Asesor de Alcaldía</option>
+                    <option value="Regidor / Comisión de Obras">Regidor / Comisión de Obras</option>
+                    <option value="Consultor / Contratista">Consultor / Contratista</option>
+                    <option value="Otro">Otro cargo</option>
+                  </select>
+                </div>
+
+                <!-- Municipalidad / Entidad -->
+                <div class="form-group">
+                  <label for="entidad" class="form-label">Municipalidad / Entidad <span class="req">*</span></label>
+                  <input type="text" id="entidad" name="entidad" class="form-input" placeholder="Ej. Mun. Provincial de Canchis" required>
+                </div>
+
+                <!-- Región del Perú -->
+                <div class="form-group">
+                  <label for="region" class="form-label">Región / Departamento <span class="req">*</span></label>
+                  <select id="region" name="region" class="form-select" required>
+                    <option value="" disabled selected>Seleccione región...</option>
+                    <option value="Cusco">Cusco</option>
+                    <option value="Lima">Lima</option>
+                    <option value="Arequipa">Arequipa</option>
+                    <option value="Puno">Puno</option>
+                    <option value="Apurímac">Apurímac</option>
+                    <option value="Ayacucho">Ayacucho</option>
+                    <option value="Junín">Junín</option>
+                    <option value="La Libertad">La Libertad</option>
+                    <option value="Piura">Piura</option>
+                    <option value="Áncash">Áncash</option>
+                    <option value="Cajamarca">Cajamarca</option>
+                    <option value="Huánuco">Huánuco</option>
+                    <option value="Huancavelica">Huancavelica</option>
+                    <option value="Ica">Ica</option>
+                    <option value="Lambayeque">Lambayeque</option>
+                    <option value="Loreto">Loreto</option>
+                    <option value="Madre de Dios">Madre de Dios</option>
+                    <option value="Moquegua">Moquegua</option>
+                    <option value="Pasco">Pasco</option>
+                    <option value="San Martín">San Martín</option>
+                    <option value="Tacna">Tacna</option>
+                    <option value="Tumbes">Tumbes</option>
+                    <option value="Ucayali">Ucayali</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Callao">Callao</option>
+                  </select>
+                </div>
+
+                <!-- Número aproximado de obras -->
+                <div class="form-group">
+                  <label for="obras" class="form-label">N° Obras en Ejecución</label>
+                  <select id="obras" name="obras" class="form-select">
+                    <option value="Menos de 10 obras">Menos de 10 obras</option>
+                    <option value="De 10 a 30 obras" selected>De 10 a 30 obras</option>
+                    <option value="De 31 a 60 obras">De 31 a 60 obras</option>
+                    <option value="Más de 60 obras">Más de 60 obras</option>
+                  </select>
+                </div>
+
+                <!-- Mensaje o requerimiento específico -->
+                <div class="form-group col-span-2">
+                  <label for="mensaje" class="form-label">Detalle o consulta sobre su cartera (Opcional)</label>
+                  <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Ej. Tenemos 3 proyectos por administración directa con retrasos y necesitamos ordenar el semáforo para el próximo concejo."></textarea>
+                </div>
+              </div>
+
+              <!-- Alerta de Estado (Cargando / Éxito / Error) -->
+              <div id="formStatusAlert" class="form-status-alert"></div>
+
+              <div style="margin-top: 24px;">
+                <button type="submit" id="submitFormBtn" class="btn btn-primary btn-lg btn-full">
+                  Registrar Solicitud y Agendar Demo
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+
+              <p style="font-size: 0.8rem; color: var(--ink-muted); text-align: center; margin-top: 14px;">
+                🔒 Sus datos se transmiten de manera segura a nuestra hoja de cálculo interna y están protegidos por estricta confidencialidad institucional.
+              </p>
+            </form>
+          </div>
+
+          <!-- Panel Lateral de Información y Beneficios -->
+          <div class="form-info-panel">
+            <div>
+              <h4>¿Qué recibirá en su sesión demostrativa?</h4>
+              <p>
+                Un consultor de Whayno le presentará en vivo cómo se estructuran las alertas con la realidad de su municipio:
+              </p>
+
+              <ul class="info-points">
+                <li class="info-point-item">
+                  <div class="info-point-icon">1</div>
+                  <span><strong>Diagnóstico de Cartera:</strong> Análisis preliminar de inversiones activas mediante código CUI.</span>
+                </li>
+                <li class="info-point-item">
+                  <div class="info-point-icon">2</div>
+                  <span><strong>Simulación de Semáforo:</strong> Cómo detectar las obras en rojo antes del vencimiento de valorizaciones.</span>
+                </li>
+                <li class="info-point-item">
+                  <div class="info-point-icon">3</div>
+                  <span><strong>Plantillas de Órdenes:</strong> Modelos de memos y resoluciones de destrabe listos para firma del alcalde.</span>
+                </li>
+                <li class="info-point-item">
+                  <div class="info-point-icon">4</div>
+                  <span><strong>Propuesta Técnica y Económica:</strong> Presupuesto adaptado a la cantidad de proyectos de su comuna.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="trust-badge-card">
+              <strong>Atención Directa con Consultores Especializados</strong>
+              <span>Coordinamos la sesión por Zoom, Google Meet o de manera presencial en su despacho municipal.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PREGUNTAS FRECUENTES (FAQ ACORDEÓN)
+         ========================================================================== -->
+    <section id="faq" class="section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="badge-pill">Resolución de Dudas</div>
+          <h2>Preguntas Frecuentes</h2>
+          <p class="lead">
+            Respuestas claras y directas a las dudas más comunes de alcaldes y equipos técnicos.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Muninteligente reemplaza al SIAF o al Banco de Inversiones de Invierte.pe?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No. Los sistemas del Estado (SIAF, SEACE, Banco de Inversiones) son de registro contable y administrativo oficial. Muninteligente es una herramienta de <strong>gestión de alertas tempranas y toma de decisiones</strong>. Cruza los datos de las distintas fuentes para que el alcalde sepa exactamente qué obra se está quedando sin plazo antes de que se convierta en un problema irreversible.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿La Inteligencia Artificial toma decisiones legales o vinculantes por el alcalde?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutamente no. La inteligencia de datos recopila información, detecta retrasos atípicos, contrasta con los plazos de la Ley de Contrataciones y prepara la orden de destrabe con la motivación técnica sugerida. La decisión política, la firma del decreto y la responsabilidad funcional corresponden 100% al alcalde y a sus funcionarios.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Cuánto tiempo toma implementar el tablero en mi municipalidad?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                La configuración inicial toma entre 5 y 10 días hábiles. Nuestro equipo de Whayno Consultores recopila la cartera de inversiones priorizadas de su municipio, calibra los indicadores de semáforo y realiza una jornada de inducción con la alcaldía, gerencia municipal y áreas usuarias.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>¿Cómo se determina el costo de la plataforma?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                El costo se adapta a la categoría del municipio (distrital pequeña, provincial o gobierno regional) y al número de inversiones activas en su cartera. Al llenar el formulario de registro le entregaremos una cotización personalizada sin compromiso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BANNER FINAL DE ACCIÓN
+         ========================================================================== -->
+    <section>
+      <div class="wrap">
+        <div class="final-banner">
+          <h2>Tenga el control de su cartera de inversiones hoy mismo</h2>
+          <p>
+            No espere a que una obra paralizada genere un conflicto social o una sanción de Contraloría. Agende una demo y proteja el presupuesto de su gestión.
+          </p>
+          <div class="final-banner-cta-group">
+            <a href="#registro" class="btn btn-primary btn-lg">
+              Completar Formulario de Registro
+            </a>
+            <a href="https://muninteligente.lovable.app/" target="_blank" rel="noopener" class="btn btn-ghost">
+              Ver Tablero Demostrativo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="logo-brand">
+          <div class="logo-icon">M</div>
+          <span>Muni<span class="highlight">inteligente</span></span>
+        </div>
+
+        <div class="footer-consultancy">
+          <span>Un desarrollo estratégico de:</span>
+          <strong style="color: var(--ink-primary); font-family: var(--font-heading);">Whayno Consultores · Cusco, Perú</strong>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Muninteligente. Todos los derechos reservados.</span>
+        <span>Aviso Legal: Los datos del tablero demostrativo son simulados con fines pedagógicos y no constituyen información oficial del Banco de Inversiones ni del MEF.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: DEMOSTRACIÓN DE ORDEN DE DESTRABE
+       ========================================================================== -->
+  <div class="modal-overlay" id="destrabeModal" role="dialog" aria-modal="true" aria-label="Visualizador de Orden de Destrabe">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeDestrabeModal" aria-label="Cerrar ventana">✕</button>
+      <div id="destrabeModalContent">
+        <!-- Rellenado dinámicamente con JavaScript -->
+      </div>
+      <div style="margin-top: 18px; text-align: right;">
+        <button type="button" class="btn btn-primary btn-sm" onclick="document.getElementById('destrabeModal').classList.remove('active')">
+          Cerrar Vista Previa
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: CONFIRMACIÓN DE ENVÍO DE DATOS A GOOGLE SHEETS
+       ========================================================================== -->
+  <div class="modal-overlay" id="successLeadModal" role="dialog" aria-modal="true" aria-label="Registro Exitoso">
+    <div class="modal-card" style="text-align: center; max-width: 520px;">
+      <div style="width: 64px; height: 64px; border-radius: 50%; background: var(--status-green-bg); color: var(--status-green); font-size: 2rem; display: grid; place-items: center; margin: 0 auto 16px;">
+        ✓
+      </div>
+      <h3 style="font-size: 1.6rem; margin-bottom: 8px;">¡Registro Completado con Éxito!</h3>
+      <p style="color: var(--ink-muted); margin-bottom: 20px;">
+        Su solicitud ha sido registrada correctamente en nuestra base de datos en Google Sheets.
+      </p>
+
+      <div id="leadSuccessSummary" style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px; margin-bottom: 24px; text-align: left; font-size: 0.92rem;">
+        <!-- Resumen de datos -->
+      </div>
+
+      <p style="font-size: 0.9rem; margin-bottom: 20px;">
+        ¿Desea además coordinar la hora de su reunión de forma inmediata con un consultor?
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="#" id="leadSuccessWaBtn" target="_blank" rel="noopener" class="btn btn-primary btn-full">
+          Confirmar Hora por WhatsApp (Opcional)
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13"></path><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </a>
+        <button type="button" class="btn btn-ghost btn-full" id="closeSuccessLeadModal">
+          Listo, finalizar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Principal -->
+  <script src="app.js"></script>
+</body>
+</html>
